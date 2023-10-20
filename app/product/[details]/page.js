@@ -4,7 +4,7 @@ import { data } from "autoprefixer";
 export const productById = async (id) => {
     try {
       const res = await fetch(
-        `https://e-comshop.vercel.app/api/admin/product-by-id?id=${id}`,
+        `/admin/product-by-id?id=${id}`,
         {
           method: "GET",
           cache: "no-store",
