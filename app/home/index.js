@@ -6,13 +6,12 @@ import { useEffect } from 'react';
 import React from 'react'
 
 const Home = function ({ data }) {
-  const { setDataA, dataA } = useStateContext();
+  const { setDataA } = useStateContext();
   useEffect(()=>{
     if(data){
       setDataA(data)
     }
   },[])
-  console.log(dataA, "mishack")
 
   return (
     <div>

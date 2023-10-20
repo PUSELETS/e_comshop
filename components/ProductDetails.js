@@ -4,18 +4,12 @@ import { useRouter } from "next/navigation";
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import { useStateContext } from '@/context/StateContext';
 import { Product } from '@/components';
-import { toast } from 'react-hot-toast';
 
 
 
 const ProductDetails = ({ data }) => {
-    const { decQty, incQty, qty, onAdd, setShowCart,cartItems, dataA } = useStateContext();
+    const { decQty, incQty, qty, onAdd,cartItems, dataA } = useStateContext();
     const [index, setIndex] = useState(0);
-    const router = useRouter();
-    const checkProductInCart = cartItems.find((item) => item);
-
-    
-    
 
   return (
     <div>
