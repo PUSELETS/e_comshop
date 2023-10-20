@@ -3,7 +3,7 @@ import ProductDetails from "@/components/ProductDetails";
 export const productById = async (id) => {
     try {
       const res = await fetch(
-        `https://e-comshop.vercel.app/admin/product-by-id?id=${id}`,
+        `https://e-comshop.vercel.app/api/admin/product-by-id?id=${id}`,
         {
           method: "GET",
           cache: "no-store",
