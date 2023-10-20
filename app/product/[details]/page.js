@@ -1,5 +1,4 @@
 import ProductDetails from "@/components/ProductDetails";
-import { data } from "autoprefixer";
 
 export const productById = async (id) => {
     try {
