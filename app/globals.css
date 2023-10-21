@@ -5,6 +5,8 @@ body, * {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
 
 }
 ::-webkit-scrollbar {
@@ -17,7 +19,7 @@ a {
 }
 
 .main-container{
-max-width: 1400px; 
+max-width: 100%; 
 margin: auto;
 width: 100%;
 
@@ -449,6 +451,10 @@ padding: 60px 35px;
   width: 70px;
   height: 70px;
   cursor: pointer;
+}
+
+.div-container{
+  width: 100%;
 }
 
 .selected-image{
