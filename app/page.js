@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 import Home from './home';
 
 export const getAllAdminProducts = async () => {
