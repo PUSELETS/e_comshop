@@ -2,7 +2,7 @@ import Home from './home';
 
 export const getAllAdminProducts = async () => {
   try {
-    const res = await fetch("https://e-comshop.vercel.app/apiadmin/all-product", {
+    const res = await fetch("https://e-comshop.vercel.app/api/admin/all-product", {
       method: "GET",
     });
 
