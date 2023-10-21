@@ -14,7 +14,7 @@ const Home = function ({ data }) {
   },[])
 
   return (
-    <div className='div-container'>
+    <div >
         <HeroBanner />
         <div className="products-heading">
             <h2>Best Seller Products</h2>
