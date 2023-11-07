@@ -9,20 +9,33 @@ export const productById = async (id) => {
           cache: "no-store",
         }
       );
-  
       const data = await res.json();
   
       return data;
     } catch (e) {
       console.log(e);
     }
-  };
+  };   
 
-    
+  export const getAllAdminProducts = async () => {
+    try {
+      const res = await fetch("https://e-comshop.vercel.app/api/admin/all-product", {
+        method: "GET",
+      });
+  
+      const data = await res.json();
+     
+  
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
 export default async function ProductDetail({params}) {
 
     const productDetailsData = await productById(params.details)
+    const productz = await getAllAdminProducts()
 
-    return <ProductDetails data={ productDetailsData && productDetailsData.data } />
+    return <ProductDetails dataC={ productDetailsData && productDetailsData.data } dataA={productz && productz.data} />
 }

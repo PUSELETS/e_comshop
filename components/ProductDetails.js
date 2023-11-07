@@ -7,8 +7,8 @@ import { Product } from '@/components';
 
 
 
-const ProductDetails = ({ data }) => {
-    const { decQty, incQty, qty, onAdd,cartItems, dataA } = useStateContext();
+const ProductDetails = ({dataC, dataA}) => {
+    const { decQty, incQty, qty, onAdd,cartItems } = useStateContext();
     const [index, setIndex] = useState(0);
 
   return (
@@ -19,7 +19,7 @@ const ProductDetails = ({ data }) => {
                 <div className="image-container">
                 <img
                 alt = ''
-                src={ data.imageUrl[index] }
+                src={ dataC.imageUrl[index] }
                 width={ 350 }
                 height={ 350 }
                 className="product-detail-image"
@@ -27,7 +27,7 @@ const ProductDetails = ({ data }) => {
                 </div>
                 <div className="small-images-container">
                 
-                    {data.imageUrl?.map((item, i) => (
+                    {dataC.imageUrl?.map((item, i) => (
                     
                     <img
                         alt = ''
@@ -42,7 +42,7 @@ const ProductDetails = ({ data }) => {
                 </div>
             </div>
             <div className="product-detail-desc">
-                    <h1>{data.name}</h1>
+                    <h1>{dataC.name}</h1>
                     <div className="reviews">
                         <div>
                             <AiFillStar />
@@ -56,8 +56,8 @@ const ProductDetails = ({ data }) => {
                         </p>
                     </div>
                     <h4>Details: </h4>
-                    <p>{data.value}</p>
-                    <p className="price">R{data.price}</p>
+                    <p>{dataC.value}</p>
+                    <p className="price">R{dataC.price}</p>
                     <div className="quantity">
                         <h3>Quantity:</h3>
                         <p className="quantity-desc">
@@ -67,7 +67,7 @@ const ProductDetails = ({ data }) => {
                         </p>
                     </div>
                         <div className="buttons">
-                            <button type="button" className="add-to-cart" onClick={() => onAdd(data, qty)}>Add to Cart</button>
+                            <button type="button" className="add-to-cart" onClick={() => onAdd(dataC, qty)}>Add to Cart</button>
                             <button type="button" className="buy-now"  >Buy Now</button>
                         </div>
                 </div>
