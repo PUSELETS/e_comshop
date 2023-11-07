@@ -4,7 +4,7 @@ export const getAllAdminProducts = async () => {
   try {
     const res = await fetch("https://e-comshop.vercel.app/api/admin/all-product", {
       method: "GET",
-      next: {revalidate: 0},
+      next: {revalidate: 1},
     });
 
     const data = await res.json();
