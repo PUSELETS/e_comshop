@@ -23,7 +23,6 @@ export const productById = async (id) => {
     try {
       const res = await fetch("https://e-comshop.vercel.app/api/admin/all-product", {
         method: "GET",
-        next: {revalidate: 1},
       });
   
       const data = await res.json();
@@ -34,6 +33,8 @@ export const productById = async (id) => {
       console.log(error);
     }
   };
+
+export const revalidate = 2 ;
 
 export default async function ProductDetail({params}) {
 

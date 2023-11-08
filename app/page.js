@@ -1,12 +1,9 @@
 import Home from './home';
 
-
-
 export const getAllAdminProducts = async () => {
   try {
     const res = await fetch("https://e-comshop.vercel.app/api/admin/all-product", {
       method: "GET",
-      next: {revalidate: 1},
     });
 
     const data = await res.json();
@@ -17,6 +14,8 @@ export const getAllAdminProducts = async () => {
     console.log(error);
   }
 };
+
+export const revalidate = 2 ;
 
 export default async function AdminAllProducts() {
  
