@@ -1,6 +1,7 @@
 import ProductDetails from "@/components/ProductDetails";
 
 export const fetchCache = 'force-no-store';
+export const dynamic = "force-dynamic";
 
 export const productById = async (id) => {
     try {

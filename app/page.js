@@ -1,6 +1,7 @@
 import Home from './home';
 
 export const fetchCache = 'force-no-store';
+export const dynamic = "force-dynamic";
 
 export const getAllAdminProducts = async () => {
   try {
