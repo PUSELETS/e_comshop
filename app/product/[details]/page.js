@@ -1,6 +1,6 @@
 import ProductDetails from "@/components/ProductDetails";
 
-
+export const fetchCache = 'force-no-store';
 
 export const productById = async (id) => {
     try {
@@ -8,7 +8,7 @@ export const productById = async (id) => {
         `https://e-comshop.vercel.app/api/admin/product-by-id?id=${id}`,
         {
           method: "GET",
-          next: {revalidate: 1},
+          cache: 'no-store',
         }
       );
       const data = await res.json();
@@ -23,6 +23,7 @@ export const productById = async (id) => {
     try {
       const res = await fetch("https://e-comshop.vercel.app/api/admin/all-product", {
         method: "GET",
+        cache: 'no-store'
       });
   
       const data = await res.json();
@@ -33,8 +34,6 @@ export const productById = async (id) => {
       console.log(error);
     }
   };
-
-export const revalidate = 2 ;
 
 export default async function ProductDetail({params}) {
 
