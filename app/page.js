@@ -1,6 +1,6 @@
 import Home from './home';
 
-export const fetchCache = 'force-no-store';
+
 
 export const getAllAdminProducts = async () => {
   try {
