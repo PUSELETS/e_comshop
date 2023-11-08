@@ -1,5 +1,7 @@
 import ProductDetails from "@/components/ProductDetails";
 
+export const fetchCache = 'force-no-store';
+
 export const productById = async (id) => {
     try {
       const res = await fetch(
