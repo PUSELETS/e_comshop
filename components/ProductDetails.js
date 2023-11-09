@@ -71,7 +71,7 @@ const ProductDetails = ({dataC, dataA}) => {
                             <button type="button" className="buy-now"  >Buy Now</button>
                         </div>
                 </div>
-        </div>
+            </div>
 
         <div className="maylike-products-wrapper">
           <h2>You may also like</h2>

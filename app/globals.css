@@ -31,7 +31,7 @@ width: 100%;
 .navbar-container{
   display: flex;
   justify-content: space-between;
-  margin: 6px 18px;
+  margin: 6px 6px;
   position: relative;
 }
 .marquee-text{
@@ -430,8 +430,7 @@ padding: 60px 35px;
 .product-detail-image{
   border-radius: 15px;
    background-color: #ebebeb;
-
-  width: 400px;
+  width: 100%;
   height: 400px;
   cursor: pointer;
   transition: .3s ease-in-out;
@@ -685,9 +684,11 @@ margin-top: 160px;
   }
   .product-detail-container{
     flex-wrap: wrap;
+    justify-content: center;
     }
   .product-detail-container .product-detail-image{
     width: 100%;
+    justify-content: center;
     height: 350px;
   }
   .cart-container{
@@ -715,7 +716,7 @@ margin-top: 160px;
     width: 150px;
   }
   .product-detail-container{
-    margin: 20px;
+    margin: none;
   }
 
 .item-desc .flex{
