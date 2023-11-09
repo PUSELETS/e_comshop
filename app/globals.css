@@ -24,9 +24,7 @@ margin: auto;
 width: 100%;
 
 }
-.layout{
-  padding: 10px;
-}
+
 
 .navbar-container{
   display: flex;
@@ -688,7 +686,6 @@ margin-top: 160px;
     }
   .product-detail-container .product-detail-image{
     width: 100%;
-    justify-content: center;
     height: 350px;
   }
   .cart-container{
