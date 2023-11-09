@@ -29,7 +29,7 @@ width: 100%;
 .navbar-container{
   display: flex;
   justify-content: space-between;
-  margin: 6px 6px;
+  margin: 6px 18px;
   position: relative;
 }
 .marquee-text{
@@ -765,5 +765,9 @@ margin-top: 160px;
 .btn-container{
   width: 300px;
   margin: auto;
+}
+.image-container{
+  margin: none;
+  width: 100%;
 }
 }
