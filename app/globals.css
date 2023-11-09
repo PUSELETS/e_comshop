@@ -424,7 +424,7 @@ padding: 60px 35px;
  margin: 40px;
  margin-top: 60px;
  color: #324d67;
-
+ width: 100%;
 }
 
 .product-detail-image{
@@ -687,11 +687,11 @@ margin-top: 160px;
     flex-wrap: wrap;
     }
   .product-detail-container .product-detail-image{
-    width: 350px;
+    width: 100%;
     height: 350px;
   }
   .cart-container{
-    width: 415px;
+    width: 100%;
   padding: 4px;
   }
   .cart-heading{
